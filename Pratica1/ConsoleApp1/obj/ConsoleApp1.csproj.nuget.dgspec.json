@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/sergio/Documentos/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj": {}
+    "/home/sergio/Área de trabalho/Trilha_DotNet/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj": {}
   },
   "projects": {
-    "/home/sergio/Documentos/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj": {
+    "/home/sergio/Área de trabalho/Trilha_DotNet/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sergio/Documentos/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj",
+        "projectUniqueName": "/home/sergio/Área de trabalho/Trilha_DotNet/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "/home/sergio/Documentos/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj",
+        "projectPath": "/home/sergio/Área de trabalho/Trilha_DotNet/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj",
         "packagesPath": "/home/sergio/.nuget/packages/",
-        "outputPath": "/home/sergio/Documentos/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/obj/",
+        "outputPath": "/home/sergio/Área de trabalho/Trilha_DotNet/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/sergio/.nuget/NuGet/NuGet.Config"
