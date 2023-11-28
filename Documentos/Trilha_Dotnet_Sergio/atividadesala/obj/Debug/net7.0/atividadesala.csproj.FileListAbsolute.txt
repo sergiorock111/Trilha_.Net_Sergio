@@ -1,0 +1,15 @@
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/bin/Debug/net7.0/atividadesala
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/bin/Debug/net7.0/atividadesala.deps.json
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/bin/Debug/net7.0/atividadesala.runtimeconfig.json
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/bin/Debug/net7.0/atividadesala.dll
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/bin/Debug/net7.0/atividadesala.pdb
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/obj/Debug/net7.0/atividadesala.csproj.AssemblyReference.cache
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/obj/Debug/net7.0/atividadesala.GeneratedMSBuildEditorConfig.editorconfig
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/obj/Debug/net7.0/atividadesala.AssemblyInfoInputs.cache
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/obj/Debug/net7.0/atividadesala.AssemblyInfo.cs
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/obj/Debug/net7.0/atividadesala.csproj.CoreCompileInputs.cache
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/obj/Debug/net7.0/atividadesala.dll
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/obj/Debug/net7.0/refint/atividadesala.dll
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/obj/Debug/net7.0/atividadesala.pdb
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/obj/Debug/net7.0/atividadesala.genruntimeconfig.cache
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/atividadesala/obj/Debug/net7.0/ref/atividadesala.dll
