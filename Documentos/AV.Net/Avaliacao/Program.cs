@@ -8,19 +8,19 @@ class Program
     {
         Escritorio escritorio = new Escritorio("Escritório de Advocacia XYZ");
 
-        Advogado advogado1 = new Advogado("Helder ", new DateTime(1980, 1, 1), "12345678901", "CNA-123");
+        Advogado advogado1 = new Advogado("Helde Almeida", new DateTime(1980, 1, 1), "12345678901", "CNA-123");
         Advogado advogado2 = new Advogado("Degas", new DateTime(1990, 5, 15), "98765432109", "CNA-456");
 
         escritorio.AdicionarAdvogado(advogado1);
         escritorio.AdicionarAdvogado(advogado2);
 
-        Cliente cliente1 = new Cliente("João", new DateTime(1985, 3, 10), "98765432101", "Casado", "Engenheiro");
-        Cliente cliente2 = new Cliente("Maria", new DateTime(1992, 7, 20), "12345678902", "Solteiro", "Advogado");
+        Cliente cliente1 = new Cliente("Maria", new DateTime(1985, 3, 10), "98765432101", "Casado", "Engenheiro");
+        Cliente cliente2 = new Cliente("João ", new DateTime(1992, 7, 20), "12345678902", "Solteiro", "Advogado");
 
         escritorio.AdicionarCliente(cliente1);
         escritorio.AdicionarCliente(cliente2);
 
-        // Exibindo informações
+       
         Console.WriteLine($"Nome do Escritório: {escritorio.Nome}");
         Console.WriteLine("\nAdvogados:");
         foreach (Advogado advogado in escritorio.Advogados)
@@ -43,7 +43,7 @@ class Program
             Console.WriteLine("\n");
         }
 
-        // Gerando relatórios
+    
         Console.WriteLine("Relatórios:");
         Console.WriteLine("Advogados com idade entre 30 e 40 anos:");
         List<Advogado> advogadosIdade30a40 = escritorio.ObterAdvogadosComIdadeEntre(30, 40);
@@ -52,6 +52,16 @@ class Program
         Console.WriteLine("Clientes com idade entre 25 e 35 anos:");
         List<Cliente> clientesIdade25a35 = escritorio.ObterClientesComIdadeEntre(25, 35);
         ExibirClientes(clientesIdade25a35);
+
+        Console.WriteLine("Clientes com estado civil informado pelo usuário:");
+        Console.Write("Informe o estado civil desejado (Casado/Solteiro): ");
+        string estadoCivilUsuario = Console.ReadLine();
+        List<Cliente> clientesComEstadoCivil = escritorio.ObterClientesPorEstadoCivil(estadoCivilUsuario);
+        ExibirClientes(clientesComEstadoCivil);
+
+        Console.WriteLine("Clientes em ordem alfabética:");
+        List<Cliente> clientesEmOrdemAlfabetica = escritorio.ObterClientesEmOrdemAlfabetica();
+        ExibirClientes(clientesEmOrdemAlfabetica);
     }
 
     static void ExibirAdvogados(List<Advogado> advogados)
@@ -95,7 +105,7 @@ class Escritorio
 
     public void AdicionarAdvogado(Advogado advogado)
     {
-        // Validar CPF e CNA únicos antes de adicionar
+        
         if (Advogados.Any(a => a.CPF == advogado.CPF) || Advogados.Any(a => a.CNA == advogado.CNA))
         {
             Console.WriteLine("Advogado com CPF ou CNA duplicado. Não adicionado.");
@@ -109,7 +119,7 @@ class Escritorio
 
     public void AdicionarCliente(Cliente cliente)
     {
-        // Validar CPF único antes de adicionar
+        
         if (Clientes.Any(c => c.CPF == cliente.CPF))
         {
             Console.WriteLine("Cliente com CPF duplicado. Não adicionado.");
@@ -142,6 +152,16 @@ class Escritorio
         DateTime dataAtual = DateTime.Now;
         return Clientes.Where(c => (dataAtual - c.DataNascimento).Days / 365 >= idadeMinima && (dataAtual - c.DataNascimento).Days / 365 <= idadeMaxima).ToList();
     }
+
+    public List<Cliente> ObterClientesPorEstadoCivil(string estadoCivil)
+    {
+        return Clientes.Where(c => c.EstadoCivil.ToLower() == estadoCivil.ToLower()).ToList();
+    }
+
+    public List<Cliente> ObterClientesEmOrdemAlfabetica()
+    {
+        return Clientes.OrderBy(c => c.Nome).ToList();
+    }
 }
 
 class Advogado
@@ -161,9 +181,7 @@ class Advogado
 
     private string ValidarCPF(string cpf)
     {
-        // Lógica de validação do CPF
-        // Aqui você pode implementar a validação específica do CPF com 11 dígitos
-        // No exemplo, apenas retorna o CPF como está
+        
         return cpf;
     }
 }
@@ -187,9 +205,7 @@ class Cliente
 
     private string ValidarCPF(string cpf)
     {
-        // Lógica de validação do CPF
-        // Aqui você pode implementar a validação específica do CPF com 11 dígitos
-        // No exemplo, apenas retorna o CPF como está
+        
         return cpf;
     }
 }
