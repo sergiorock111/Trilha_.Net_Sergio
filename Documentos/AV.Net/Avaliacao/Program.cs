@@ -10,12 +10,15 @@ class Program
 
         Advogado advogado1 = new Advogado("Helder Almeida", new DateTime(1980, 1, 1), "12345678901", "CNA-123");
         Advogado advogado2 = new Advogado("Degas", new DateTime(1990, 5, 15), "98765432109", "CNA-456");
+        Advogado advogado3 = new Advogado("Lucas Lessa", new DateTime(1995, 3, 12), "11765432112", "CNA-555");
+
 
         escritorio.AdicionarAdvogado(advogado1);
         escritorio.AdicionarAdvogado(advogado2);
 
         Cliente cliente1 = new Cliente("Maria", new DateTime(1985, 3, 10), "98765432101", "Casado", "Engenheiro");
         Cliente cliente2 = new Cliente("João", new DateTime(1992, 7, 20), "12345678902", "Solteiro", "Advogado");
+        Cliente cliente3 = new Cliente("João", new DateTime(1991, 8, 19), "78345678902", "Solteiro", "Professor");
 
         escritorio.AdicionarCliente(cliente1);
         escritorio.AdicionarCliente(cliente2);
