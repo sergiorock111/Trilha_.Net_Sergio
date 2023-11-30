@@ -1,0 +1,15 @@
+/home/sergio/Documentos/AV.Net/Avaliacao/bin/Debug/net7.0/Avaliacao
+/home/sergio/Documentos/AV.Net/Avaliacao/bin/Debug/net7.0/Avaliacao.deps.json
+/home/sergio/Documentos/AV.Net/Avaliacao/bin/Debug/net7.0/Avaliacao.runtimeconfig.json
+/home/sergio/Documentos/AV.Net/Avaliacao/bin/Debug/net7.0/Avaliacao.dll
+/home/sergio/Documentos/AV.Net/Avaliacao/bin/Debug/net7.0/Avaliacao.pdb
+/home/sergio/Documentos/AV.Net/Avaliacao/obj/Debug/net7.0/Avaliacao.csproj.AssemblyReference.cache
+/home/sergio/Documentos/AV.Net/Avaliacao/obj/Debug/net7.0/Avaliacao.GeneratedMSBuildEditorConfig.editorconfig
+/home/sergio/Documentos/AV.Net/Avaliacao/obj/Debug/net7.0/Avaliacao.AssemblyInfoInputs.cache
+/home/sergio/Documentos/AV.Net/Avaliacao/obj/Debug/net7.0/Avaliacao.AssemblyInfo.cs
+/home/sergio/Documentos/AV.Net/Avaliacao/obj/Debug/net7.0/Avaliacao.csproj.CoreCompileInputs.cache
+/home/sergio/Documentos/AV.Net/Avaliacao/obj/Debug/net7.0/Avaliacao.dll
+/home/sergio/Documentos/AV.Net/Avaliacao/obj/Debug/net7.0/refint/Avaliacao.dll
+/home/sergio/Documentos/AV.Net/Avaliacao/obj/Debug/net7.0/Avaliacao.pdb
+/home/sergio/Documentos/AV.Net/Avaliacao/obj/Debug/net7.0/Avaliacao.genruntimeconfig.cache
+/home/sergio/Documentos/AV.Net/Avaliacao/obj/Debug/net7.0/ref/Avaliacao.dll
