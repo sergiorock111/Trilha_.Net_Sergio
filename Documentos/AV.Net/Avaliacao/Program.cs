@@ -8,19 +8,19 @@ class Program
     {
         Escritorio escritorio = new Escritorio("Escritório de Advocacia XYZ");
 
-        Advogado advogado1 = new Advogado("Helde Almeida", new DateTime(1980, 1, 1), "12345678901", "CNA-123");
+        Advogado advogado1 = new Advogado("Helder Almeida", new DateTime(1980, 1, 1), "12345678901", "CNA-123");
         Advogado advogado2 = new Advogado("Degas", new DateTime(1990, 5, 15), "98765432109", "CNA-456");
 
         escritorio.AdicionarAdvogado(advogado1);
         escritorio.AdicionarAdvogado(advogado2);
 
-        Cliente cliente1 = new Cliente("Maria", new DateTime(1985, 3, 10), "98765432101", "Casado", "Engenheiro");
-        Cliente cliente2 = new Cliente("João ", new DateTime(1992, 7, 20), "12345678902", "Solteiro", "Advogado");
+        Cliente cliente1 = new Cliente("João", new DateTime(1985, 3, 10), "98765432101", "Casado", "Engenheiro");
+        Cliente cliente2 = new Cliente("Maria", new DateTime(1992, 7, 20), "12345678902", "Solteiro", "Advogado");
 
         escritorio.AdicionarCliente(cliente1);
         escritorio.AdicionarCliente(cliente2);
 
-       
+        
         Console.WriteLine($"Nome do Escritório: {escritorio.Nome}");
         Console.WriteLine("\nAdvogados:");
         foreach (Advogado advogado in escritorio.Advogados)
@@ -43,7 +43,7 @@ class Program
             Console.WriteLine("\n");
         }
 
-    
+        
         Console.WriteLine("Relatórios:");
         Console.WriteLine("Advogados com idade entre 30 e 40 anos:");
         List<Advogado> advogadosIdade30a40 = escritorio.ObterAdvogadosComIdadeEntre(30, 40);
@@ -62,6 +62,12 @@ class Program
         Console.WriteLine("Clientes em ordem alfabética:");
         List<Cliente> clientesEmOrdemAlfabetica = escritorio.ObterClientesEmOrdemAlfabetica();
         ExibirClientes(clientesEmOrdemAlfabetica);
+
+        Console.WriteLine("Clientes cuja profissão contenha texto informado pelo usuário:");
+        Console.Write("Informe o texto desejado na profissão: ");
+        string textoProfissaoUsuario = Console.ReadLine();
+        List<Cliente> clientesComProfissaoContendoTexto = escritorio.ObterClientesComProfissaoContendoTexto(textoProfissaoUsuario);
+        ExibirClientes(clientesComProfissaoContendoTexto);
     }
 
     static void ExibirAdvogados(List<Advogado> advogados)
@@ -162,6 +168,11 @@ class Escritorio
     {
         return Clientes.OrderBy(c => c.Nome).ToList();
     }
+
+    public List<Cliente> ObterClientesComProfissaoContendoTexto(string textoProfissao)
+    {
+        return Clientes.Where(c => c.Profissao.ToLower().Contains(textoProfissao.ToLower())).ToList();
+    }
 }
 
 class Advogado
@@ -181,7 +192,7 @@ class Advogado
 
     private string ValidarCPF(string cpf)
     {
-        
+       
         return cpf;
     }
 }
@@ -205,7 +216,7 @@ class Cliente
 
     private string ValidarCPF(string cpf)
     {
-        
+       
         return cpf;
     }
 }
