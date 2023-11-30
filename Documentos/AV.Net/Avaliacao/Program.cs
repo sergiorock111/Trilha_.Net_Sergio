@@ -14,8 +14,8 @@ class Program
         escritorio.AdicionarAdvogado(advogado1);
         escritorio.AdicionarAdvogado(advogado2);
 
-        Cliente cliente1 = new Cliente("João", new DateTime(1985, 3, 10), "98765432101", "Casado", "Engenheiro");
-        Cliente cliente2 = new Cliente("Maria", new DateTime(1992, 7, 20), "12345678902", "Solteiro", "Advogado");
+        Cliente cliente1 = new Cliente("Maria", new DateTime(1985, 3, 10), "98765432101", "Casado", "Engenheiro");
+        Cliente cliente2 = new Cliente("João", new DateTime(1992, 7, 20), "12345678902", "Solteiro", "Advogado");
 
         escritorio.AdicionarCliente(cliente1);
         escritorio.AdicionarCliente(cliente2);
@@ -43,7 +43,7 @@ class Program
             Console.WriteLine("\n");
         }
 
-        
+       
         Console.WriteLine("Relatórios:");
         Console.WriteLine("Advogados com idade entre 30 e 40 anos:");
         List<Advogado> advogadosIdade30a40 = escritorio.ObterAdvogadosComIdadeEntre(30, 40);
@@ -63,11 +63,17 @@ class Program
         List<Cliente> clientesEmOrdemAlfabetica = escritorio.ObterClientesEmOrdemAlfabetica();
         ExibirClientes(clientesEmOrdemAlfabetica);
 
-        Console.WriteLine("Clientes cuja profissão contenha texto informado pelo usuário:");
-        Console.Write("Informe o texto desejado na profissão: ");
+        Console.WriteLine("Clientes cuja profissão tenha sido informado pelo usuário:");
+        Console.Write("Informe a profissão desejada: ");
         string textoProfissaoUsuario = Console.ReadLine();
         List<Cliente> clientesComProfissaoContendoTexto = escritorio.ObterClientesComProfissaoContendoTexto(textoProfissaoUsuario);
         ExibirClientes(clientesComProfissaoContendoTexto);
+
+        Console.WriteLine("Advogados e Clientes aniversariantes do mês informado:");
+        Console.Write("Informe o mês desejado (1 a 12): ");
+        int mesAniversario = int.Parse(Console.ReadLine());
+        List<Pessoa> aniversariantesDoMes = escritorio.ObterAniversariantesDoMes(mesAniversario);
+        ExibirAniversariantes(aniversariantesDoMes);
     }
 
     static void ExibirAdvogados(List<Advogado> advogados)
@@ -91,6 +97,16 @@ class Program
             Console.WriteLine($"CPF: {cliente.CPF}");
             Console.WriteLine($"Estado Civil: {cliente.EstadoCivil}");
             Console.WriteLine($"Profissão: {cliente.Profissao}");
+            Console.WriteLine("\n");
+        }
+    }
+
+    static void ExibirAniversariantes(List<Pessoa> aniversariantes)
+    {
+        foreach (Pessoa pessoa in aniversariantes)
+        {
+            Console.WriteLine($"Nome: {pessoa.Nome}");
+            Console.WriteLine($"Data de Nascimento: {pessoa.DataNascimento.ToShortDateString()}");
             Console.WriteLine("\n");
         }
     }
@@ -125,7 +141,7 @@ class Escritorio
 
     public void AdicionarCliente(Cliente cliente)
     {
-        
+        // Validar CPF único antes de adicionar
         if (Clientes.Any(c => c.CPF == cliente.CPF))
         {
             Console.WriteLine("Cliente com CPF duplicado. Não adicionado.");
@@ -173,19 +189,39 @@ class Escritorio
     {
         return Clientes.Where(c => c.Profissao.ToLower().Contains(textoProfissao.ToLower())).ToList();
     }
+
+    public List<Pessoa> ObterAniversariantesDoMes(int mes)
+    {
+        DateTime dataAtual = DateTime.Now;
+        List<Pessoa> aniversariantes = new List<Pessoa>();
+
+        aniversariantes.AddRange(Advogados.Where(a => a.DataNascimento.Month == mes));
+        aniversariantes.AddRange(Clientes.Where(c => c.DataNascimento.Month == mes));
+
+        return aniversariantes;
+    }
 }
 
-class Advogado
+class Pessoa
 {
     public string Nome { get; private set; }
     public DateTime DataNascimento { get; private set; }
+
+    public Pessoa(string nome, DateTime dataNascimento)
+    {
+        Nome = nome;
+        DataNascimento = dataNascimento;
+    }
+}
+
+class Advogado : Pessoa
+{
     public string CPF { get; private set; }
     public string CNA { get; private set; }
 
     public Advogado(string nome, DateTime dataNascimento, string cpf, string cna)
+        : base(nome, dataNascimento)
     {
-        Nome = nome;
-        DataNascimento = dataNascimento;
         CPF = ValidarCPF(cpf);
         CNA = cna;
     }
@@ -197,18 +233,15 @@ class Advogado
     }
 }
 
-class Cliente
+class Cliente : Pessoa
 {
-    public string Nome { get; private set; }
-    public DateTime DataNascimento { get; private set; }
     public string CPF { get; private set; }
     public string EstadoCivil { get; private set; }
     public string Profissao { get; private set; }
 
     public Cliente(string nome, DateTime dataNascimento, string cpf, string estadoCivil, string profissao)
+        : base(nome, dataNascimento)
     {
-        Nome = nome;
-        DataNascimento = dataNascimento;
         CPF = ValidarCPF(cpf);
         EstadoCivil = estadoCivil;
         Profissao = profissao;
@@ -216,7 +249,7 @@ class Cliente
 
     private string ValidarCPF(string cpf)
     {
-       
+      
         return cpf;
     }
 }
