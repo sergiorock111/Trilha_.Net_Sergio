@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/sergio/Documentos/Trilha_Dotnet_Sergio/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj": {}
+    "/home/sergio/Documentos/Trilha_Dotnet_Sergio/atividadesala/atividadesala.csproj": {}
   },
   "projects": {
-    "/home/sergio/Documentos/Trilha_Dotnet_Sergio/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj": {
+    "/home/sergio/Documentos/Trilha_Dotnet_Sergio/atividadesala/atividadesala.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sergio/Documentos/Trilha_Dotnet_Sergio/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj",
-        "projectName": "ConsoleApp1",
-        "projectPath": "/home/sergio/Documentos/Trilha_Dotnet_Sergio/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj",
+        "projectUniqueName": "/home/sergio/Documentos/Trilha_Dotnet_Sergio/atividadesala/atividadesala.csproj",
+        "projectName": "atividadesala",
+        "projectPath": "/home/sergio/Documentos/Trilha_Dotnet_Sergio/atividadesala/atividadesala.csproj",
         "packagesPath": "/home/sergio/.nuget/packages/",
-        "outputPath": "/home/sergio/Documentos/Trilha_Dotnet_Sergio/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/obj/",
+        "outputPath": "/home/sergio/Documentos/Trilha_Dotnet_Sergio/atividadesala/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/sergio/.nuget/NuGet/NuGet.Config"

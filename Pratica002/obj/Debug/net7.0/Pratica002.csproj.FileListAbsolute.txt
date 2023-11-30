@@ -1,0 +1,5 @@
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/Pratica002/obj/Debug/net7.0/Pratica002.csproj.AssemblyReference.cache
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/Pratica002/obj/Debug/net7.0/Pratica002.GeneratedMSBuildEditorConfig.editorconfig
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/Pratica002/obj/Debug/net7.0/Pratica002.AssemblyInfoInputs.cache
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/Pratica002/obj/Debug/net7.0/Pratica002.AssemblyInfo.cs
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/Pratica002/obj/Debug/net7.0/Pratica002.csproj.CoreCompileInputs.cache

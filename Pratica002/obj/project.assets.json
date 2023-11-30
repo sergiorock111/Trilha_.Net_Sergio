@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/sergio/Documentos/Trilha_Dotnet_Sergio/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj",
-      "projectName": "ConsoleApp1",
-      "projectPath": "/home/sergio/Documentos/Trilha_Dotnet_Sergio/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/ConsoleApp1.csproj",
+      "projectUniqueName": "/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/Pratica002/Pratica002.csproj",
+      "projectName": "Pratica002",
+      "projectPath": "/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/Pratica002/Pratica002.csproj",
       "packagesPath": "/home/sergio/.nuget/packages/",
-      "outputPath": "/home/sergio/Documentos/Trilha_Dotnet_Sergio/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/obj/",
+      "outputPath": "/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/Pratica002/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/sergio/.nuget/NuGet/NuGet.Config"

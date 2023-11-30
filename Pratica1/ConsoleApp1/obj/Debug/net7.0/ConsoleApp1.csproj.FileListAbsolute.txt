@@ -1,0 +1,5 @@
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.csproj.AssemblyReference.cache
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.AssemblyInfoInputs.cache
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.AssemblyInfo.cs
+/home/sergio/Área de trabalho/Trilha_Dotnet_Sergio/Trilha_.Net_Sergio/Pratica1/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.csproj.CoreCompileInputs.cache
